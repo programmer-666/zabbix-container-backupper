@@ -1,0 +1,12 @@
+A   Listele
+    A1  Bütün imajları Listele
+        [name:tag]
+    A2  Yedeklenecek imahları seç
+B   Commit
+    B1  Yeni kaydedilecek imajlar için özel bir tag
+C   Save
+    C1  Hangi imajlar dışarı aktarılacak
+    C2  Dışarı aktarılacak imajların tar olarak çıkarılması
+    
+# Modül
+# Metot
