@@ -2,10 +2,9 @@ import docker
 
 client = docker.from_env()
 
+#print(client.containers.list()) # LISTING
 """
-print(client.containers.list())
-
-c1 = client.containers.get(client.containers.list()[1].id)
+c1 = client.containers.get(client.containers.list()[1].id) # SELECTING
 
 print(c1.attrs['Config']['Image']) # gives container name
 #print(c1.logs()[:10]) # shows logs
@@ -16,7 +15,7 @@ print(c1.attrs['Config']['Image']) # gives container name
 #pd.DataFrame(c1.stats(stream=False)).to_csv('out.csv', index=False) # returns multiple stats
 """
 
-#print(client.containers.list()[1].commit(tag="V1B1", repository="test")) # repository -> images name, tag = tag
+#print(client.containers.list()[1].commit(tag="V1B1", repository="test")) # repository -> images name, tag = tag # COMMITING
 
 
 #print([(x.name,x.id) for x in client.containers.list()])
@@ -32,3 +31,4 @@ f.close()
 """
 
 #print(client.images.remove('test:V1B1')) # deletes image
+
