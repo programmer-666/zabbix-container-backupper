@@ -12,3 +12,15 @@ D
 
 # Modül
 # Metot
+
+
+New Way
+
+
+commit <container_name> <new_container_name>
+author ve commit mesaji girilebilir
+
+
+docker commit -a "programmer-666" -m "backup" data-alpine data-alpine:backup
+docker save -o data-alpine--backup.tar data-alpine
+docker export -o data-alpine-FS.tar data-alpine
